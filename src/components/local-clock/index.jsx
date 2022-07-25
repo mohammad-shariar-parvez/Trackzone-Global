@@ -4,11 +4,11 @@ import useClock from '../../hooks/useClock';
 import { useEffect } from 'react';
 
 const LocalClock = ({ clock, updateClock }) => {
-  console.log('from local clock', clock.offset);
+  // console.log('from local clock', clock.offset);
   const { date, timezone, offset } = useClock(clock.timezone, clock.offset);
-  console.log('', offset);
-  console.log('timezone is ', timezone);
-  console.log('------');
+  // console.log('', offset);
+  // console.log('timezone is ', timezone);
+  // console.log('------');
 
   useEffect(() => {
     updateClock({
